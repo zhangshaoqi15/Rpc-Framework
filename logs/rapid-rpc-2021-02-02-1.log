@@ -1,0 +1,118 @@
+[2021-02-02T18:17:49.396+08:00] [INFO] [nioEventLoopGroup-2-1-17] [test.rpc.server.RPCServer] [RPCServer.java,78,test.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T18:34:38.145+08:00] [INFO] [nioEventLoopGroup-2-1-17] [test.rpc.server.RPCServer] [RPCServer.java,78,test.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T19:14:51.838+08:00] [ERROR] [nioEventLoopGroup-3-1-18] [test.rpc.server.RpcSeverHandler] [RpcSeverHandler.java,78,test.rpc.server.RpcSeverHandler,exceptionCaught] [caught Throwablejava.io.IOException: 远程主机强迫关闭了一个现有的连接。] ## ''
+[2021-02-02T19:16:14.315+08:00] [ERROR] [nioEventLoopGroup-3-2-19] [test.rpc.server.RpcSeverHandler] [RpcSeverHandler.java,78,test.rpc.server.RpcSeverHandler,exceptionCaught] [caught Throwablejava.io.IOException: 远程主机强迫关闭了一个现有的连接。] ## ''
+ption
+	at java.util.concurrent.ConcurrentHashMap.putVal(Unknown Source)
+	at java.util.concurrent.ConcurrentHashMap.put(Unknown Source)
+	at test.rpc.client.RPCConnectManager.addHandler(RPCConnectManager.java:279)
+	at test.rpc.client.RPCConnectManager.access$3(RPCConnectManager.java:277)
+	at test.rpc.client.RPCConnectManager$2.operationComplete(RPCConnectManager.java:247)
+	at test.rpc.client.RPCConnectManager$2.operationComplete(RPCConnectManager.java:1)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:511)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:504)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:483)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:424)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:103)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:306)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:341)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:582)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:461)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Unknown Source)
+'
+[2021-02-02T19:14:47.257+08:00] [INFO] [nioEventLoopGroup-2-1-16] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,245,test.rpc.client.RPCConnectManager$2,operationComplete] [connected successfully!] ## ''
+[2021-02-02T19:16:40.600+08:00] [INFO] [nioEventLoopGroup-2-1-16] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,228,test.rpc.client.RPCConnectManager$1,operationComplete] [ChannelFuture channel close, remote peer = /127.0.0.1:8080] ## ''
+[2021-02-02T19:16:43.611+08:00] [WARN] [nioEventLoopGroup-2-1-16] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,231,test.rpc.client.RPCConnectManager$1,lambda$0] [connect failed, to be reconnect...] ## ''
+[2021-02-02T19:16:44.614+08:00] [INFO] [nioEventLoopGroup-2-2-17] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,228,test.rpc.client.RPCConnectManager$1,operationComplete] [ChannelFuture channel close, remote peer = /127.0.0.1:8080] ## ''
+[2021-02-02T19:16:47.625+08:00] [WARN] [nioEventLoopGroup-2-2-17] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,231,test.rpc.client.RPCConnectManager$1,lambda$0] [connect failed, to be reconnect...] ## ''
+[2021-02-02T19:16:48.626+08:00] [INFO] [nioEventLoopGroup-2-3-18] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,228,test.rpc.client.RPCConnectManager$1,operationComplete] [ChannelFuture channel close, remote peer = /127.0.0.1:8080] ## ''
+[2021-02-02T19:17:12.010+08:00] [INFO] [nioEventLoopGroup-2-1-16] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,228,test.rpc.client.RPCConnectManager$1,operationComplete] [ChannelFuture channel close, remote peer = /127.0.0.1:8080] ## ''
+[2021-02-02T19:17:15.021+08:00] [WARN] [nioEventLoopGroup-2-1-16] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,231,test.rpc.client.RPCConnectManager$1,lambda$0] [connect failed, to be reconnect...] ## ''
+[2021-02-02T19:17:16.022+08:00] [INFO] [nioEventLoopGroup-2-2-17] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,228,test.rpc.client.RPCConnectManager$1,operationComplete] [ChannelFuture channel close, remote peer = /127.0.0.1:8080] ## ''
+[2021-02-02T19:17:25.377+08:00] [INFO] [nioEventLoopGroup-2-1-17] [test.rpc.server.RPCServer] [RPCServer.java,78,test.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T19:18:06.940+08:00] [INFO] [nioEventLoopGroup-2-1-16] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,228,test.rpc.client.RPCConnectManager$1,operationComplete] [ChannelFuture channel close, remote peer = /127.0.0.1:8080] ## ''
+[2021-02-02T19:18:09.951+08:00] [WARN] [nioEventLoopGroup-2-1-16] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,231,test.rpc.client.RPCConnectManager$1,lambda$0] [connect failed, to be reconnect...] ## ''
+[2021-02-02T19:18:10.952+08:00] [INFO] [nioEventLoopGroup-2-2-17] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,228,test.rpc.client.RPCConnectManager$1,operationComplete] [ChannelFuture channel close, remote peer = /127.0.0.1:8080] ## ''
+[2021-02-02T19:18:13.963+08:00] [WARN] [nioEventLoopGroup-2-2-17] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,231,test.rpc.client.RPCConnectManager$1,lambda$0] [connect failed, to be reconnect...] ## ''
+[2021-02-02T19:18:14.974+08:00] [INFO] [nioEventLoopGroup-2-3-18] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,228,test.rpc.client.RPCConnectManager$1,operationComplete] [ChannelFuture channel close, remote peer = /127.0.0.1:8080] ## ''
+[2021-02-02T19:18:29.591+08:00] [INFO] [nioEventLoopGroup-2-1-17] [test.rpc.server.RPCServer] [RPCServer.java,78,test.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T19:18:53.307+08:00] [INFO] [nioEventLoopGroup-2-1-17] [test.rpc.server.RPCServer] [RPCServer.java,78,test.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T19:19:00.068+08:00] [INFO] [nioEventLoopGroup-2-1-17] [test.rpc.server.RPCServer] [RPCServer.java,78,test.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T19:20:01.086+08:00] [INFO] [nioEventLoopGroup-2-1-17] [test.rpc.server.RPCServer] [RPCServer.java,78,test.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T19:21:08.753+08:00] [ERROR] [nioEventLoopGroup-3-1-18] [test.rpc.server.RpcSeverHandler] [RpcSeverHandler.java,78,test.rpc.server.RpcSeverHandler,exceptionCaught] [caught Throwablejava.io.IOException: 远程主机强迫关闭了一个现有的连接。] ## ''
+[2021-02-02T19:28:17.760+08:00] [ERROR] [nioEventLoopGroup-3-2-20] [test.rpc.server.RpcSeverHandler] [RpcSeverHandler.java,78,test.rpc.server.RpcSeverHandler,exceptionCaught] [caught Throwablejava.io.IOException: 远程主机强迫关闭了一个现有的连接。] ## ''
+[2021-02-02T19:29:43.996+08:00] [INFO] [nioEventLoopGroup-2-1-17] [test.rpc.server.RPCServer] [RPCServer.java,78,test.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T19:29:58.731+08:00] [ERROR] [pool-2-thread-1-19] [test.rpc.server.RpcSeverHandler] [RpcSeverHandler.java,44,test.rpc.server.RpcSeverHandler$1,run] [rpc service handle error: java.lang.NoSuchMethodError: test.rpc.provider.TemperatureServiceImpl.12:00(java.lang.String)] ## ''
+[2021-02-02T19:29:58.731+08:00] [ERROR] [pool-2-thread-2-20] [test.rpc.server.RpcSeverHandler] [RpcSeverHandler.java,44,test.rpc.server.RpcSeverHandler$1,run] [rpc service handle error: java.lang.NoSuchMethodError: test.rpc.provider.TemperatureServiceImpl.23:00()] ## ''
+[2021-02-02T19:31:48.797+08:00] [ERROR] [nioEventLoopGroup-3-1-18] [test.rpc.server.RpcSeverHandler] [RpcSeverHandler.java,78,test.rpc.server.RpcSeverHandler,exceptionCaught] [caught Throwablejava.io.IOException: 远程主机强迫关闭了一个现有的连接。] ## ''
+[2021-02-02T20:17:21.859+08:00] [INFO] [nioEventLoopGroup-2-1-17] [test.rpc.server.RPCServer] [RPCServer.java,78,test.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T20:18:12.795+08:00] [ERROR] [nioEventLoopGroup-3-1-18] [test.rpc.server.RpcSeverHandler] [RpcSeverHandler.java,78,test.rpc.server.RpcSeverHandler,exceptionCaught] [caught Throwablejava.io.IOException: 远程主机强迫关闭了一个现有的连接。] ## ''
+[2021-02-02T20:18:20.421+08:00] [INFO] [nioEventLoopGroup-2-1-16] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,252,test.rpc.client.RPCConnectManager$3,operationComplete] [connected successfully!] ## ''
+[2021-02-02T20:20:22.440+08:00] [WARN] [nioEventLoopGroup-2-1-16] [io.netty.channel.DefaultChannelPipeline] [Slf4JLogger.java,151,io.netty.util.internal.logging.Slf4JLogger,warn] [An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.] ## ' java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:345)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:647)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:582)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:461)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Unknown Source)
+'
+[2021-02-02T20:20:22.440+08:00] [INFO] [nioEventLoopGroup-2-1-16] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,232,test.rpc.client.RPCConnectManager$2,operationComplete] [ChannelFuture channel close, remote peer = /127.0.0.1:8080] ## ''
+[2021-02-02T20:20:25.451+08:00] [WARN] [nioEventLoopGroup-2-1-16] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,237,test.rpc.client.RPCConnectManager$2$1,run] [connect failed, to be reconnect...] ## ''
+[2021-02-02T20:20:26.462+08:00] [INFO] [nioEventLoopGroup-2-2-17] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,232,test.rpc.client.RPCConnectManager$2,operationComplete] [ChannelFuture channel close, remote peer = /127.0.0.1:8080] ## ''
+[2021-02-02T20:54:02.689+08:00] [INFO] [nioEventLoopGroup-2-1-17] [test.rpc.server.RPCServer] [RPCServer.java,78,test.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T20:54:10.404+08:00] [INFO] [nioEventLoopGroup-2-1-16] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,252,test.rpc.client.RPCConnectManager$3,operationComplete] [connected successfully!] ## ''
+[2021-02-02T20:58:48.364+08:00] [WARN] [nioEventLoopGroup-2-1-16] [io.netty.channel.DefaultChannelPipeline] [Slf4JLogger.java,151,io.netty.util.internal.logging.Slf4JLogger,warn] [An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.] ## ' java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:345)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:647)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:582)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:461)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Unknown Source)
+'
+[2021-02-02T20:58:48.374+08:00] [INFO] [nioEventLoopGroup-2-1-16] [test.rpc.client.RPCConnectManager] [RPCConnectManager.java,232,test.rpc.client.RPCConnectManager$2,operationComplete] [ChannelFuture channel close, remote peer = /127.0.0.1:8080] ## ''
+[2021-02-02T21:10:13.144+08:00] [INFO] [Thread-0-10] [test.rpc.server.RPCServer] [RPCServer.java,92,test.rpc.server.RPCServer,start] [start rapid rpc success! ] ## ''
+[2021-02-02T21:10:13.144+08:00] [INFO] [nioEventLoopGroup-2-1-17] [test.rpc.server.RPCServer] [RPCServer.java,79,test.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T21:12:54.619+08:00] [ERROR] [nioEventLoopGroup-3-1-18] [test.rpc.server.RpcSeverHandler] [RpcSeverHandler.java,78,test.rpc.server.RpcSeverHandler,exceptionCaught] [caught Throwablejava.io.IOException: 远程主机强迫关闭了一个现有的连接。] ## ''
+[2021-02-02T22:09:43.869+08:00] [INFO] [Thread-0-10] [test.rpc.server.RPCServer] [RPCServer.java,92,test.rpc.server.RPCServer,start] [start rapid rpc success! ] ## ''
+[2021-02-02T22:09:43.869+08:00] [INFO] [nioEventLoopGroup-2-1-17] [test.rpc.server.RPCServer] [RPCServer.java,79,test.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T22:12:50.252+08:00] [ERROR] [nioEventLoopGroup-3-1-18] [test.rpc.server.RpcSeverHandler] [RpcSeverHandler.java,78,test.rpc.server.RpcSeverHandler,exceptionCaught] [caught Throwablejava.io.IOException: 远程主机强迫关闭了一个现有的连接。] ## ''
+[2021-02-02T22:39:35.066+08:00] [INFO] [Thread-0-10] [test.rpc.server.RPCServer] [RPCServer.java,92,test.rpc.server.RPCServer,start] [start rapid rpc success! ] ## ''
+[2021-02-02T22:39:35.066+08:00] [INFO] [nioEventLoopGroup-2-1-17] [test.rpc.server.RPCServer] [RPCServer.java,79,test.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T22:40:21.185+08:00] [ERROR] [nioEventLoopGroup-3-1-18] [test.rpc.server.RpcSeverHandler] [RpcSeverHandler.java,78,test.rpc.server.RpcSeverHandler,exceptionCaught] [caught Throwablejava.io.IOException: 远程主机强迫关闭了一个现有的连接。] ## ''
+[2021-02-02T22:58:52.922+08:00] [INFO] [nioEventLoopGroup-2-1-17] [com.bfxy.rapid.rpc.server.RPCServer] [RPCServer.java,80,com.bfxy.rapid.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T22:58:52.922+08:00] [INFO] [Thread-0-10] [com.bfxy.rapid.rpc.server.RPCServer] [RPCServer.java,93,com.bfxy.rapid.rpc.server.RPCServer,start] [start rapid rpc success! ] ## ''
+[2021-02-02T22:59:10.989+08:00] [ERROR] [nioEventLoopGroup-3-1-18] [com.bfxy.rapid.rpc.server.RpcSeverHandler] [RpcSeverHandler.java,79,com.bfxy.rapid.rpc.server.RpcSeverHandler,exceptionCaught] [caught Throwablejava.io.IOException: 远程主机强迫关闭了一个现有的连接。] ## ''
+[2021-02-02T23:44:59.516+08:00] [INFO] [Thread-0-10] [com.bfxy.rapid.rpc.server.RPCServer] [RPCServer.java,93,com.bfxy.rapid.rpc.server.RPCServer,start] [start rapid rpc success! ] ## ''
+[2021-02-02T23:44:59.516+08:00] [INFO] [nioEventLoopGroup-2-1-17] [com.bfxy.rapid.rpc.server.RPCServer] [RPCServer.java,80,com.bfxy.rapid.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T23:45:07.145+08:00] [INFO] [nioEventLoopGroup-2-1-17] [com.bfxy.rapid.rpc.server.RPCServer] [RPCServer.java,80,com.bfxy.rapid.rpc.server.RPCServer$2,operationComplete] [server binding successfully, addr: 127.0.0.1:8080] ## ''
+[2021-02-02T23:45:07.145+08:00] [INFO] [Thread-0-10] [com.bfxy.rapid.rpc.server.RPCServer] [RPCServer.java,93,com.bfxy.rapid.rpc.server.RPCServer,start] [start rapid rpc success! ] ## ''
+[2021-02-02T23:48:12.343+08:00] [ERROR] [nioEventLoopGroup-3-1-18] [com.bfxy.rapid.rpc.server.RpcSeverHandler] [RpcSeverHandler.java,79,com.bfxy.rapid.rpc.server.RpcSeverHandler,exceptionCaught] [caught Throwablejava.io.IOException: 远程主机强迫关闭了一个现有的连接。] ## ''
+## ''
+[2021-02-02T23:58:50.326+08:00] [INFO] [Thread-0-10] [com.bfxy.rapid.rpc.server.RpcServer] [RpcServer.java,86,com.bfxy.rapid.rpc.server.RpcServer,start] [start rapid rpc success! ] ## ''
+[2021-02-02T23:58:50.326+08:00] [INFO] [nioEventLoopGroup-2-1-17] [com.bfxy.rapid.rpc.server.RpcServer] [RpcServer.java,75,com.bfxy.rapid.rpc.server.RpcServer$2,operationComplete] [server success bing to 127.0.0.1:8080] ## ''
+[2021-02-02T23:59:32.417+08:00] [ERROR] [nioEventLoopGroup-3-1-18] [com.bfxy.rapid.rpc.server.RpcSeverHandler] [RpcSeverHandler.java,91,com.bfxy.rapid.rpc.server.RpcSeverHandler,exceptionCaught] [server caught Throwable: java.io.IOException: 远程主机强迫关闭了一个现有的连接。] ## ''
