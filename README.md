@@ -120,8 +120,8 @@ Protostuff是基于protobuf的序列化框架，不需要定义.proto配置文�
 `优点：在节点扩/缩容时，尽可能保证客户端发起的 RPC 调用还是固定分配到相同的服务节点上，把带来的影响降到最低`
 
 # 6.测试与运行
-1.在src/test/java/test/rpc目录下找到服务消费者和服务提供者的启动类，它们分别是ConsumerStarter.java和ProviderStarter.java
-2.根据自己环境的实际情况编写服务代码，并分别放在test.rpc.consumer与test.rpc.provider下，本框架中服务接口与实现类是test.rpc.consumer.TemperatureService和test.rpc.provider.TemperatureServiceImpl
-3.你需要根据自己环境的实际情况修改ProviderStarter.java下的主机号与端口号，并且在ZookeeperRegistryService.java中修改注册中心的主机号与端口号，还有zk的路径（善用搜索功能）
-4.成功启动zookeeper后，再运行ProviderStarter.java和ConsumerStarter.java，如果在客户端下能正常输出`result：xxx`字样，代表成功运行，也可以尝试自己的服务接口
-5.在test.registry包中的CuratorTest.java是zookeeper的测试类，可以检验zk能否成功启动，与项目无关。
+1.在src/test/java/test/rpc目录下找到服务消费者和服务提供者的启动类，它们分别是ConsumerStarter.java和ProviderStarter.java  
+2.根据自己环境的实际情况编写服务代码，并分别放在test.rpc.consumer与test.rpc.provider下，本框架中服务接口与实现类是test.rpc.consumer.TemperatureService和test.rpc.provider.TemperatureServiceImpl  
+3.你需要根据自己环境的实际情况修改ProviderStarter.java下的主机号与端口号，并且在ZookeeperRegistryService.java中修改注册中心的主机号与端口号，还有zk的路径（善用搜索功能）  
+4.成功启动zookeeper后，再运行ProviderStarter.java和ConsumerStarter.java，如果在客户端下能正常输出`result：xxx`字样，代表成功运行，也可以尝试自己的服务接口  
+5.在test.registry包中的CuratorTest.java是zookeeper的测试类，可以检验zk能否成功启动，与项目无关。  
