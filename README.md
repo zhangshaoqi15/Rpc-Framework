@@ -26,7 +26,7 @@ remote procedure call：远程过程调用
 > 由于在编写过程中为了方便测试，项目中存在大量`不规范`的输出日志，请见谅。
 
 # 2. 客户端与服务器的设计
-`服务消费者`
+___服务消费者___
 ## 客户端（RpcClient）
 * 同步调用，用JDK动态代理创建代理实例，传入代理实现类RpcProxyImpl
 
@@ -37,7 +37,7 @@ remote procedure call：远程过程调用
 * 连接服务提供者节点，发送请求
 * 等待响应结果
 
-`服务提供者`
+___服务提供者___
 ## 服务器（RpcServer）
 * 分别添加解码器、LengthFieldBasedFrameDecoder、编码器、业务处理器
 * 启动服务节点，同步阻塞
@@ -45,7 +45,7 @@ remote procedure call：远程过程调用
 * 缓存服务接口的实例对象
 
 # 3. 网络通信
-`服务消费者`
+___服务消费者___
 ## 连接管理器（RpcConnectManager）
 * 提交到线程池异步发起连接，分别添加编码器、LengthFieldBasedFrameDecoder、解码器、业务处理器
 * 提交的同时，主线程轮询获取一个可用的业务处理器（连接）
@@ -56,7 +56,7 @@ remote procedure call：远程过程调用
 * 接收到响应结果后，channelRead() 中判断是否有响应结果，并释放锁
 * 将请求封装成自定义的异步模型，冲刷到channel中，然后立刻返回异步模型
 
-`服务提供者`
+___服务提供者___
 ## 业务处理器（RpcSeverHandler）
 * 把请求消息的ID赋给响应消息，便于后续异步处理
 * 解析请求，通过反射获取具体的本地实例，再调用方法，返回响应结果
@@ -64,12 +64,12 @@ remote procedure call：远程过程调用
 
 # 4. 通信协议与序列化
 ## 通信协议
-`RPCrequest`
+___RPCrequest___
 * 每个消息都拥有一个requestID，在服务器响应请求后，ID用于异步处理响应结果
 * 请求的classname、methodname
 * 请求的参数及参数类型
 
-`RPCresponse`
+___RPCresponse___
 * requestID
 * 响应结果
 * 异常结果
